@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="330" viewBox="0 0 1100 330" role="img" aria-labelledby="title desc">
+<title id="title">AI phenotyping workflow diagram</title>
+<desc id="desc">Four stage workflow from synthetic phenotyping inputs to model training, validation, and interpretation.</desc>
+<defs>
+<linearGradient id="heroGradient" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#0B3D2E"/>
+<stop offset="55%" stop-color="#1B7F5A"/>
+<stop offset="100%" stop-color="#63B967"/>
+</linearGradient>
+<linearGradient id="softGreen" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" stop-color="#2E7D32"/>
+<stop offset="100%" stop-color="#00A896"/>
+</linearGradient>
+<filter id="softShadow" x="-10%" y="-10%" width="120%" height="130%">
+<feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#163B2B" flood-opacity="0.14"/>
+</filter>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#2E7D32"/></marker>
+</defs>
+<rect width="1100" height="330" rx="28" fill="#FBFDF9"/>
+<text x="50.0" y="55.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="500" fill="#17312B" text-anchor="start">AI phenotyping workflow</text>
+<text x="50.0" y="84.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" fill="#60746C" text-anchor="start">A transparent pipeline from crop traits to explainable prediction outputs</text>
+<rect x="54.0" y="130.0" width="220.0" height="128.0" rx="22" fill="#FFFFFF" stroke="#DCEBE2"/>
+<circle cx="88" cy="165" r="18" fill="#E8F5E9" stroke="#B5DABF"/>
+<text x="88.0" y="171.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="500" fill="#2E7D32" text-anchor="middle">1</text>
+<text x="118.0" y="170.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="500" fill="#17312B" text-anchor="start">Phenotyping inputs</text>
+<text x="78.0" y="208.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#60746C" text-anchor="start">Canopy, NDVI proxy, SPAD, disea</text>
+<text x="78.0" y="229.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#60746C" text-anchor="start">se, maturity</text>
+<path d="M 280 194 L 316 194" stroke="#2E7D32" stroke-width="2.2" marker-end="url(#arrow)"/>
+<rect x="314.0" y="130.0" width="220.0" height="128.0" rx="22" fill="#FFFFFF" stroke="#DCEBE2"/>
+<circle cx="348" cy="165" r="18" fill="#E8F5E9" stroke="#B5DABF"/>
+<text x="348.0" y="171.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="500" fill="#2E7D32" text-anchor="middle">2</text>
+<text x="378.0" y="170.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="500" fill="#17312B" text-anchor="start">Model training</text>
+<text x="338.0" y="208.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#60746C" text-anchor="start">Ridge regression using syntheti</text>
+<text x="338.0" y="229.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#60746C" text-anchor="start">c plot-level traits</text>
+<path d="M 540 194 L 576 194" stroke="#2E7D32" stroke-width="2.2" marker-end="url(#arrow)"/>
+<rect x="574.0" y="130.0" width="220.0" height="128.0" rx="22" fill="#FFFFFF" stroke="#DCEBE2"/>
+<circle cx="608" cy="165" r="18" fill="#E8F5E9" stroke="#B5DABF"/>
+<text x="608.0" y="171.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="500" fill="#2E7D32" text-anchor="middle">3</text>
+<text x="638.0" y="170.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="500" fill="#17312B" text-anchor="start">Validation</text>
+<text x="598.0" y="208.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#60746C" text-anchor="start">Held-out genotype test set with</text>
+<text x="598.0" y="229.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#60746C" text-anchor="start"> RMSE, MAE, R²</text>
+<path d="M 800 194 L 836 194" stroke="#2E7D32" stroke-width="2.2" marker-end="url(#arrow)"/>
+<rect x="834.0" y="130.0" width="220.0" height="128.0" rx="22" fill="#FFFFFF" stroke="#DCEBE2"/>
+<circle cx="868" cy="165" r="18" fill="#E8F5E9" stroke="#B5DABF"/>
+<text x="868.0" y="171.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="500" fill="#2E7D32" text-anchor="middle">4</text>
+<text x="898.0" y="170.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="500" fill="#17312B" text-anchor="start">Interpretation</text>
+<text x="858.0" y="208.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#60746C" text-anchor="start">Feature importance and candidat</text>
+<text x="858.0" y="229.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#60746C" text-anchor="start">e ranking</text>
+</svg>
