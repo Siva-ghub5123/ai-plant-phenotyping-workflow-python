@@ -33,13 +33,16 @@ ai-plant-phenotyping-workflow-python/
 │   ├── feature_importance.svg
 │   ├── model_coefficients.csv
 │   ├── model_metrics.json
+│   ├── portfolio_overview.svg
 │   ├── predictions.csv
 │   ├── predicted_vs_observed.svg
+│   ├── workflow_diagram.svg
 │   └── top_candidate_genotypes.csv
 ├── reports/
 │   └── ai_phenotyping_report.md
 ├── scripts/
-│   └── ai_phenotyping_workflow.py
+│   ├── ai_phenotyping_workflow.py
+│   └── make_portfolio_visuals.py
 ├── LICENSE
 └── README.md
 ```
@@ -68,13 +71,23 @@ Only Python and NumPy are required.
 
 ## Example outputs
 
-- model performance metrics
-- predicted vs observed plot
-- feature-importance ranking
-- top candidate genotype table
-- model card describing assumptions and limitations
+## Visual portfolio preview
 
-![Predicted vs observed](outputs/predicted_vs_observed.svg)
+![AI plant phenotyping portfolio overview](outputs/portfolio_overview.svg)
+
+## Model validation
+
+![Predicted vs observed yield-potential score](outputs/predicted_vs_observed.svg)
+
+## Feature importance
+
+![Feature importance ranking](outputs/feature_importance.svg)
+
+## Workflow diagram
+
+![AI phenotyping workflow diagram](outputs/workflow_diagram.svg)
+
+These visuals are generated from the synthetic output tables using `scripts/make_portfolio_visuals.py`, so the presentation layer is reproducible rather than manually assembled.
 
 ## Result snapshot
 
