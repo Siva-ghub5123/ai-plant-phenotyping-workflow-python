@@ -1,32 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
-<rect width="100%" height="100%" fill="white"/>
-<text x="450.0" y="35" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">Permutation-style Feature Importance</text>
-<text x="228" y="90" text-anchor="end" font-family="Arial" font-size="13">canopy_cover_pct</text>
-<rect x="240" y="70" width="620.0" height="28" fill="#2E7D32" opacity="0.85"/>
-<text x="868.0" y="90" font-family="Arial" font-size="13">0.283</text>
-<text x="228" y="130" text-anchor="end" font-family="Arial" font-size="13">ndvi_proxy</text>
-<rect x="240" y="110" width="355.9" height="28" fill="#2E7D32" opacity="0.85"/>
-<text x="603.9137504418522" y="130" font-family="Arial" font-size="13">0.162</text>
-<text x="228" y="170" text-anchor="end" font-family="Arial" font-size="13">disease_score_1_9</text>
-<rect x="240" y="150" width="272.9" height="28" fill="#2E7D32" opacity="0.85"/>
-<text x="520.8525980911984" y="170" font-family="Arial" font-size="13">0.124</text>
-<text x="228" y="210" text-anchor="end" font-family="Arial" font-size="13">spad_chlorophyll_proxy</text>
-<rect x="240" y="190" width="60.7" height="28" fill="#2E7D32" opacity="0.85"/>
-<text x="308.70696359137503" y="210" font-family="Arial" font-size="13">0.028</text>
-<text x="228" y="250" text-anchor="end" font-family="Arial" font-size="13">thermal_depression_c</text>
-<rect x="240" y="230" width="27.6" height="28" fill="#2E7D32" opacity="0.85"/>
-<text x="275.6139978791092" y="250" font-family="Arial" font-size="13">0.013</text>
-<text x="228" y="290" text-anchor="end" font-family="Arial" font-size="13">red_edge_index_proxy</text>
-<rect x="240" y="270" width="3.3" height="28" fill="#2E7D32" opacity="0.85"/>
-<text x="251.28738069989396" y="290" font-family="Arial" font-size="13">0.002</text>
-<text x="228" y="330" text-anchor="end" font-family="Arial" font-size="13">plant_height_cm</text>
-<rect x="240" y="310" width="-0.2" height="28" fill="#2E7D32" opacity="0.85"/>
-<text x="247.78084128667373" y="330" font-family="Arial" font-size="13">-0.000</text>
-<text x="228" y="370" text-anchor="end" font-family="Arial" font-size="13">texture_uniformity</text>
-<rect x="240" y="350" width="-2.4" height="28" fill="#2E7D32" opacity="0.85"/>
-<text x="245.5892541534111" y="370" font-family="Arial" font-size="13">-0.001</text>
-<text x="228" y="410" text-anchor="end" font-family="Arial" font-size="13">days_to_maturity</text>
-<rect x="240" y="390" width="-7.9" height="28" fill="#2E7D32" opacity="0.85"/>
-<text x="240.11028632025452" y="410" font-family="Arial" font-size="13">-0.004</text>
-<text x="450.0" y="490.0" text-anchor="middle" font-family="Arial" font-size="12">Synthetic data demonstration</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="560" viewBox="0 0 920 560" role="img" aria-labelledby="title desc">
+<title id="title">Feature-importance ranking</title>
+<desc id="desc">Horizontal bar chart showing the most influential synthetic phenotyping variables by mean R squared drop.</desc>
+<defs>
+<linearGradient id="heroGradient" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#0B3D2E"/>
+<stop offset="55%" stop-color="#1B7F5A"/>
+<stop offset="100%" stop-color="#63B967"/>
+</linearGradient>
+<linearGradient id="softGreen" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" stop-color="#2E7D32"/>
+<stop offset="100%" stop-color="#00A896"/>
+</linearGradient>
+<filter id="softShadow" x="-10%" y="-10%" width="120%" height="130%">
+<feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#163B2B" flood-opacity="0.14"/>
+</filter>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#2E7D32"/></marker>
+</defs>
+<rect width="920" height="560" rx="28" fill="#FBFDF9"/>
+<text x="58.0" y="55.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="500" fill="#17312B" text-anchor="start">Feature importance</text>
+<text x="58.0" y="84.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" fill="#60746C" text-anchor="start">Mean R² drop when each synthetic phenotyping feature is permuted</text>
+<text x="62.0" y="147.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="500" fill="#17312B" text-anchor="start">canopy cover pct</text>
+<rect x="330" y="125" width="520" height="24" rx="12" fill="#E8F3EE"/>
+<rect x="330" y="125" width="520.0" height="24" rx="12" fill="url(#softGreen)"/>
+<text x="865.0" y="143.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="500" fill="#60746C" text-anchor="start">0.2829</text>
+<text x="62.0" y="193.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="500" fill="#17312B" text-anchor="start">ndvi proxy</text>
+<rect x="330" y="171" width="520" height="24" rx="12" fill="#E8F3EE"/>
+<rect x="330" y="171" width="298.5" height="24" rx="12" fill="url(#softGreen)"/>
+<text x="865.0" y="189.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="500" fill="#60746C" text-anchor="start">0.1624</text>
+<text x="62.0" y="239.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="500" fill="#17312B" text-anchor="start">disease score 1 9</text>
+<rect x="330" y="217" width="520" height="24" rx="12" fill="#E8F3EE"/>
+<rect x="330" y="217" width="228.8" height="24" rx="12" fill="url(#softGreen)"/>
+<text x="865.0" y="235.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="500" fill="#60746C" text-anchor="start">0.1245</text>
+<text x="62.0" y="285.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="500" fill="#17312B" text-anchor="start">spad chlorophyll proxy</text>
+<rect x="330" y="263" width="520" height="24" rx="12" fill="#E8F3EE"/>
+<rect x="330" y="263" width="50.9" height="24" rx="12" fill="url(#softGreen)"/>
+<text x="865.0" y="281.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="500" fill="#60746C" text-anchor="start">0.0277</text>
+<text x="62.0" y="331.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="500" fill="#17312B" text-anchor="start">thermal depression c</text>
+<rect x="330" y="309" width="520" height="24" rx="12" fill="#E8F3EE"/>
+<rect x="330" y="309" width="23.2" height="24" rx="12" fill="url(#softGreen)"/>
+<text x="865.0" y="327.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="500" fill="#60746C" text-anchor="start">0.0126</text>
+<text x="62.0" y="377.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="500" fill="#17312B" text-anchor="start">red edge index proxy</text>
+<rect x="330" y="355" width="520" height="24" rx="12" fill="#E8F3EE"/>
+<rect x="330" y="355" width="2.8" height="24" rx="12" fill="url(#softGreen)"/>
+<text x="865.0" y="373.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="500" fill="#60746C" text-anchor="start">0.0015</text>
+<text x="62.0" y="423.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="500" fill="#17312B" text-anchor="start">plant height cm</text>
+<rect x="330" y="401" width="520" height="24" rx="12" fill="#E8F3EE"/>
+<rect x="330" y="401" width="-0.2" height="24" rx="12" fill="url(#softGreen)"/>
+<text x="865.0" y="419.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="500" fill="#60746C" text-anchor="start">-0.0001</text>
+<text x="62.0" y="469.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="500" fill="#17312B" text-anchor="start">texture uniformity</text>
+<rect x="330" y="447" width="520" height="24" rx="12" fill="#E8F3EE"/>
+<rect x="330" y="447" width="-2.0" height="24" rx="12" fill="url(#softGreen)"/>
+<text x="865.0" y="465.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="500" fill="#60746C" text-anchor="start">-0.0011</text>
+<text x="58.0" y="515.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" fill="#60746C" text-anchor="start">Higher value means the model lost more predictive power when that feature was disrupted.</text>
 </svg>
