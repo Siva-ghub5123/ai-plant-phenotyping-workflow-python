@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<rect width="100%" height="100%" fill="white"/>
+<text x="450.0" y="35" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">Permutation-style Feature Importance</text>
+<text x="228" y="90" text-anchor="end" font-family="Arial" font-size="13">canopy_cover_pct</text>
+<rect x="240" y="70" width="620.0" height="28" fill="#2E7D32" opacity="0.85"/>
+<text x="868.0" y="90" font-family="Arial" font-size="13">0.283</text>
+<text x="228" y="130" text-anchor="end" font-family="Arial" font-size="13">ndvi_proxy</text>
+<rect x="240" y="110" width="355.9" height="28" fill="#2E7D32" opacity="0.85"/>
+<text x="603.9137504418522" y="130" font-family="Arial" font-size="13">0.162</text>
+<text x="228" y="170" text-anchor="end" font-family="Arial" font-size="13">disease_score_1_9</text>
+<rect x="240" y="150" width="272.9" height="28" fill="#2E7D32" opacity="0.85"/>
+<text x="520.8525980911984" y="170" font-family="Arial" font-size="13">0.124</text>
+<text x="228" y="210" text-anchor="end" font-family="Arial" font-size="13">spad_chlorophyll_proxy</text>
+<rect x="240" y="190" width="60.7" height="28" fill="#2E7D32" opacity="0.85"/>
+<text x="308.70696359137503" y="210" font-family="Arial" font-size="13">0.028</text>
+<text x="228" y="250" text-anchor="end" font-family="Arial" font-size="13">thermal_depression_c</text>
+<rect x="240" y="230" width="27.6" height="28" fill="#2E7D32" opacity="0.85"/>
+<text x="275.6139978791092" y="250" font-family="Arial" font-size="13">0.013</text>
+<text x="228" y="290" text-anchor="end" font-family="Arial" font-size="13">red_edge_index_proxy</text>
+<rect x="240" y="270" width="3.3" height="28" fill="#2E7D32" opacity="0.85"/>
+<text x="251.28738069989396" y="290" font-family="Arial" font-size="13">0.002</text>
+<text x="228" y="330" text-anchor="end" font-family="Arial" font-size="13">plant_height_cm</text>
+<rect x="240" y="310" width="-0.2" height="28" fill="#2E7D32" opacity="0.85"/>
+<text x="247.78084128667373" y="330" font-family="Arial" font-size="13">-0.000</text>
+<text x="228" y="370" text-anchor="end" font-family="Arial" font-size="13">texture_uniformity</text>
+<rect x="240" y="350" width="-2.4" height="28" fill="#2E7D32" opacity="0.85"/>
+<text x="245.5892541534111" y="370" font-family="Arial" font-size="13">-0.001</text>
+<text x="228" y="410" text-anchor="end" font-family="Arial" font-size="13">days_to_maturity</text>
+<rect x="240" y="390" width="-7.9" height="28" fill="#2E7D32" opacity="0.85"/>
+<text x="240.11028632025452" y="410" font-family="Arial" font-size="13">-0.004</text>
+<text x="450.0" y="490.0" text-anchor="middle" font-family="Arial" font-size="12">Synthetic data demonstration</text>
+</svg>
