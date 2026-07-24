@@ -69,8 +69,6 @@ python scripts/ai_phenotyping_workflow.py
 
 Only Python and NumPy are required.
 
-## Example outputs
-
 ## Visual portfolio preview
 
 ![AI plant phenotyping portfolio overview](outputs/portfolio_overview.svg)
