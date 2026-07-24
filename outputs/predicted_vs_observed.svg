@@ -1,33 +1,80 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="620" viewBox="0 0 720 620">
-<rect width="100%" height="100%" fill="white"/>
-<text x="360.0" y="35" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">Predicted vs Observed Yield-Potential Score</text>
-<line x1="80" y1="540" x2="640" y2="540" stroke="#333"/>
-<line x1="80" y1="80" x2="80" y2="540" stroke="#333"/>
-<line x1="80.0" y1="540.0" x2="640.0" y2="80.0" stroke="#999" stroke-dasharray="5,5"/>
-<circle cx="608.2" cy="164.4" r="5" fill="#1565C0" opacity="0.75"/>
-<circle cx="563.1" cy="143.9" r="5" fill="#1565C0" opacity="0.75"/>
-<circle cx="554.5" cy="171.7" r="5" fill="#1565C0" opacity="0.75"/>
-<circle cx="534.1" cy="172.8" r="5" fill="#1565C0" opacity="0.75"/>
-<circle cx="192.9" cy="441.7" r="5" fill="#1565C0" opacity="0.75"/>
-<circle cx="230.8" cy="440.2" r="5" fill="#1565C0" opacity="0.75"/>
-<circle cx="268.9" cy="420.3" r="5" fill="#1565C0" opacity="0.75"/>
-<circle cx="222.3" cy="440.8" r="5" fill="#1565C0" opacity="0.75"/>
-<circle cx="201.4" cy="428.2" r="5" fill="#1565C0" opacity="0.75"/>
-<circle cx="264.3" cy="430.1" r="5" fill="#1565C0" opacity="0.75"/>
-<circle cx="265.3" cy="398.3" r="5" fill="#1565C0" opacity="0.75"/>
-<circle cx="324.6" cy="389.8" r="5" fill="#1565C0" opacity="0.75"/>
-<circle cx="150.4" cy="481.7" r="5" fill="#1565C0" opacity="0.75"/>
-<circle cx="120.3" cy="504.5" r="5" fill="#1565C0" opacity="0.75"/>
-<circle cx="150.9" cy="513.0" r="5" fill="#1565C0" opacity="0.75"/>
-<circle cx="156.1" cy="513.8" r="5" fill="#1565C0" opacity="0.75"/>
-<circle cx="361.6" cy="338.5" r="5" fill="#1565C0" opacity="0.75"/>
-<circle cx="365.7" cy="326.7" r="5" fill="#1565C0" opacity="0.75"/>
-<circle cx="412.8" cy="305.8" r="5" fill="#1565C0" opacity="0.75"/>
-<circle cx="384.5" cy="300.4" r="5" fill="#1565C0" opacity="0.75"/>
-<circle cx="137.0" cy="465.9" r="5" fill="#1565C0" opacity="0.75"/>
-<circle cx="128.8" cy="481.2" r="5" fill="#1565C0" opacity="0.75"/>
-<circle cx="238.7" cy="413.6" r="5" fill="#1565C0" opacity="0.75"/>
-<circle cx="125.9" cy="442.9" r="5" fill="#1565C0" opacity="0.75"/>
-<text x="360.0" y="595" text-anchor="middle" font-family="Arial" font-size="14">Observed yield-potential score</text>
-<text x="24" y="310.0" text-anchor="middle" font-family="Arial" font-size="14" transform="rotate(-90 24 310.0)">Predicted yield-potential score</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="640" viewBox="0 0 920 640" role="img" aria-labelledby="title desc">
+<title id="title">Predicted versus observed yield-potential score</title>
+<desc id="desc">Scatter plot comparing observed and predicted yield-potential scores for held-out synthetic phenotyping observations.</desc>
+<defs>
+<linearGradient id="heroGradient" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#0B3D2E"/>
+<stop offset="55%" stop-color="#1B7F5A"/>
+<stop offset="100%" stop-color="#63B967"/>
+</linearGradient>
+<linearGradient id="softGreen" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" stop-color="#2E7D32"/>
+<stop offset="100%" stop-color="#00A896"/>
+</linearGradient>
+<filter id="softShadow" x="-10%" y="-10%" width="120%" height="130%">
+<feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#163B2B" flood-opacity="0.14"/>
+</filter>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#2E7D32"/></marker>
+</defs>
+<rect width="920" height="640" rx="28" fill="#FBFDF9"/>
+<text x="58.0" y="50.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="500" fill="#17312B" text-anchor="start">Predicted vs observed yield-potential score</text>
+<text x="58.0" y="78.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" fill="#60746C" text-anchor="start">Held-out genotype validation using synthetic phenotyping traits</text>
+<line x1="96" y1="516.0" x2="796" y2="516.0" stroke="#DDE8E2" stroke-width="1"/>
+<line x1="96.0" y1="96" x2="96.0" y2="516" stroke="#DDE8E2" stroke-width="1"/>
+<text x="84.0" y="521.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#60746C" text-anchor="end">21</text>
+<text x="96.0" y="542.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#60746C" text-anchor="middle">21</text>
+<line x1="96" y1="432.0" x2="796" y2="432.0" stroke="#DDE8E2" stroke-width="1"/>
+<line x1="236.0" y1="96" x2="236.0" y2="516" stroke="#DDE8E2" stroke-width="1"/>
+<text x="84.0" y="437.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#60746C" text-anchor="end">24</text>
+<text x="236.0" y="542.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#60746C" text-anchor="middle">24</text>
+<line x1="96" y1="348.0" x2="796" y2="348.0" stroke="#DDE8E2" stroke-width="1"/>
+<line x1="376.0" y1="96" x2="376.0" y2="516" stroke="#DDE8E2" stroke-width="1"/>
+<text x="84.0" y="353.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#60746C" text-anchor="end">28</text>
+<text x="376.0" y="542.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#60746C" text-anchor="middle">28</text>
+<line x1="96" y1="264.0" x2="796" y2="264.0" stroke="#DDE8E2" stroke-width="1"/>
+<line x1="516.0" y1="96" x2="516.0" y2="516" stroke="#DDE8E2" stroke-width="1"/>
+<text x="84.0" y="269.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#60746C" text-anchor="end">31</text>
+<text x="516.0" y="542.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#60746C" text-anchor="middle">31</text>
+<line x1="96" y1="180.0" x2="796" y2="180.0" stroke="#DDE8E2" stroke-width="1"/>
+<line x1="656.0" y1="96" x2="656.0" y2="516" stroke="#DDE8E2" stroke-width="1"/>
+<text x="84.0" y="185.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#60746C" text-anchor="end">35</text>
+<text x="656.0" y="542.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#60746C" text-anchor="middle">35</text>
+<line x1="96" y1="96.0" x2="796" y2="96.0" stroke="#DDE8E2" stroke-width="1"/>
+<line x1="796.0" y1="96" x2="796.0" y2="516" stroke="#DDE8E2" stroke-width="1"/>
+<text x="84.0" y="101.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#60746C" text-anchor="end">38</text>
+<text x="796.0" y="542.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#60746C" text-anchor="middle">38</text>
+<line x1="96.0" y1="516.0" x2="796.0" y2="96.0" stroke="#8CBBA3" stroke-width="2" stroke-dasharray="8 8"/>
+<circle cx="756.2" cy="173.0" r="5.2" fill="#009688" opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="699.8" cy="154.4" r="5.2" fill="#009688" opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="689.1" cy="179.7" r="5.2" fill="#009688" opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="663.6" cy="180.7" r="5.2" fill="#009688" opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="237.2" cy="426.2" r="5.2" fill="#009688" opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="284.4" cy="424.9" r="5.2" fill="#009688" opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="332.1" cy="406.7" r="5.2" fill="#009688" opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="273.9" cy="425.4" r="5.2" fill="#009688" opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="247.7" cy="413.9" r="5.2" fill="#009688" opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="326.3" cy="415.7" r="5.2" fill="#009688" opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="327.6" cy="386.6" r="5.2" fill="#009688" opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="401.7" cy="378.8" r="5.2" fill="#009688" opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="184.0" cy="462.8" r="5.2" fill="#009688" opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="146.4" cy="483.6" r="5.2" fill="#009688" opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="184.6" cy="491.4" r="5.2" fill="#009688" opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="191.2" cy="492.1" r="5.2" fill="#009688" opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="448.0" cy="332.1" r="5.2" fill="#009688" opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="453.1" cy="321.3" r="5.2" fill="#009688" opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="512.0" cy="302.2" r="5.2" fill="#009688" opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="476.7" cy="297.2" r="5.2" fill="#009688" opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="167.2" cy="448.3" r="5.2" fill="#009688" opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="157.0" cy="462.3" r="5.2" fill="#009688" opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="294.4" cy="400.6" r="5.2" fill="#009688" opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="153.3" cy="427.3" r="5.2" fill="#009688" opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<line x1="96" y1="516" x2="796" y2="516" stroke="#17312B" stroke-width="1.4"/>
+<line x1="96" y1="96" x2="96" y2="516" stroke="#17312B" stroke-width="1.4"/>
+<text x="446.0" y="585.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="500" fill="#17312B" text-anchor="middle">Observed yield-potential score</text>
+<text x="26" y="306.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="500" fill="#17312B" text-anchor="middle" transform="rotate(-90 26 306.0)">Predicted yield-potential score</text>
+<rect x="690.0" y="118.0" width="170.0" height="104.0" rx="18" fill="#FFFFFF" stroke="#DCEBE2"/>
+<text x="715.0" y="149.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="500" fill="#60746C" text-anchor="start">Model fit</text>
+<text x="715.0" y="184.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="500" fill="#2E7D32" text-anchor="start">R² 0.9428</text>
+<text x="715.0" y="210.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" fill="#60746C" text-anchor="start">RMSE 1.119</text>
+<text x="732.0" y="538.0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#60746C" text-anchor="middle">Dashed line = perfect prediction</text>
 </svg>
