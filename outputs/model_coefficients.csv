@@ -1,0 +1,10 @@
+feature,standardized_coefficient
+canopy_cover_pct,1.7687
+ndvi_proxy,1.0452
+disease_score_1_9,-0.9784
+spad_chlorophyll_proxy,0.426
+plant_height_cm,0.2307
+thermal_depression_c,0.2143
+red_edge_index_proxy,-0.1902
+days_to_maturity,0.189
+texture_uniformity,-0.0356
