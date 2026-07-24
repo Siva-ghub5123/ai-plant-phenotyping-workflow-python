@@ -1,0 +1,18 @@
+{
+  "model": "ridge regression implemented with NumPy",
+  "split_strategy": "held-out genotypes",
+  "target": "yield_potential_score",
+  "n_train_plots": 72,
+  "n_test_plots": 24,
+  "test_genotypes": [
+    "AIPHENO_G01",
+    "AIPHENO_G05",
+    "AIPHENO_G09",
+    "AIPHENO_G13",
+    "AIPHENO_G17",
+    "AIPHENO_G21"
+  ],
+  "rmse": 1.119,
+  "mae": 0.8995,
+  "r2": 0.9428
+}
